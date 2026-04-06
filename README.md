@@ -49,9 +49,9 @@ If migration is incorrect:
 ---
 
 ## 📂 Project Structure
-docs/ → Documentation
-data/ → Source & Target datasets
-tests/ → Python validation scripts
+- docs/ → Documentation
+- data/ → Source & Target datasets
+- tests/ → Python validation scripts
 
 
 ---

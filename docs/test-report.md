@@ -24,5 +24,14 @@ Validate data migration from System A to System B.
 
 ---
 
+## Metrics
+
+- Total Records Tested: 5
+- Defects Found: 3
+- Defects Resolved: 3
+- Pass Rate: 100%
+
+---
+
 ## Conclusion
 The migration is successful and data integrity is maintained.

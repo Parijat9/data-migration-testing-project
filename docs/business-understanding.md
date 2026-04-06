@@ -18,3 +18,12 @@ Accuracy matters because if the migrated data is wrong, the new system will also
 
 ## Why test the migration?
 Testing helps confirm that important data moved correctly and that transformation rules were applied properly.
+
+## Business Impact
+
+If migration fails:
+- Revenue reporting may be incorrect
+- Customer communication may fail
+- Orders may be lost
+
+Testing ensures trust in the new system.

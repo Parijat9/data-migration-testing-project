@@ -1,0 +1,6 @@
+cust_id,full_name,email,country_code,order_id,order_dt,product,qty,amt
+1,John Doe,john@gmail.com,IN,101,12-01-2023,Phone,2,200.456
+2,Jane Smith,jane@gmail.com,US,102,15-02-2023,Laptop,1,800.999
+3,Rahul Sharma,rahul@gmail.com,IN,103,20-03-2023,Tablet,3,300.123
+4,Emily Clark,emily@gmail.com,US,104,05-04-2023,Monitor,1,450.777
+5,Amit Verma,amit@gmail.com,IN,105,18-05-2023,Keyboard,2,99.499

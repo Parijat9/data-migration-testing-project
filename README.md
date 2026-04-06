@@ -53,7 +53,6 @@ If migration is incorrect:
 - data/ → Source & Target datasets
 - tests/ → Python validation scripts
 
-
 ---
 
 ## 🛠 Tools Used
@@ -80,6 +79,19 @@ If migration is incorrect:
 - Handling transformation rules
 - Detecting data inconsistencies
 - Structuring QA projects in GitHub
+
+---
+
+## 📸 Project Screenshots
+
+### Repository
+![Repo](images/repo.png)
+
+### Issues
+![Issues](images/issues.png)
+
+### Project Board
+![Board](images/board.png)
 
 ---
 

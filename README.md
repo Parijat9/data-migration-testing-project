@@ -49,3 +49,44 @@ If migration is incorrect:
 ---
 
 ## 📂 Project Structure
+docs/ → Documentation
+data/ → Source & Target datasets
+tests/ → Python validation scripts
+
+
+---
+
+## 🛠 Tools Used
+- Python
+- Pandas
+- Pytest
+- GitHub
+
+---
+
+## 📊 Sample Test Results
+
+| Test Type | Status |
+|----------|--------|
+| Row Count | ✅ Pass |
+| Null Check | ✅ Pass |
+| Duplicate Check | ✅ Pass |
+| Transformation Check | ✅ Pass |
+
+---
+
+## 🧾 Key Learnings
+- Importance of validating data migration
+- Handling transformation rules
+- Detecting data inconsistencies
+- Structuring QA projects in GitHub
+
+---
+
+## 🎯 Conclusion
+The migration was successfully validated using structured test cases and automated checks.
+
+This project demonstrates practical skills in:
+- Data testing
+- QA documentation
+- GitHub project management

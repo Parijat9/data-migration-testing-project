@@ -1,36 +1,51 @@
-# Data Migration Testing Project
+# 🚀 Data Migration Testing Project
 
-## Project Objective
-This project validates whether data was migrated correctly from System A to System B.
+## 📌 Overview
+This project simulates real-world data migration testing where data is moved from System A (source) to System B (target).
 
-## Project Scenario
-A client migrated data from an old system to a new system. Additional testing is needed to confirm that important data elements were migrated correctly and that transformations were applied properly.
+The goal is to validate that:
+- Data is migrated completely
+- Data is accurate
+- Transformations are correctly applied
 
-## What this project includes
-- Business understanding document
-- Migration rules
-- Test scenarios
-- Test cases
-- Source and target sample data
-- Basic Python test scripts
+---
 
-## Key validations
+## 🧠 Business Context
+A client migrated customer and order data to a new system.
+
+If migration is incorrect:
+- Reports become unreliable
+- Business decisions become wrong
+- Customer data may be lost or corrupted
+
+---
+
+## ⚠️ Risks Identified
+- Missing records
+- Duplicate records
+- Incorrect transformations
+- Invalid formats (dates, country names)
+- Null values in key fields
+
+---
+
+## 🧪 Testing Performed
+
+### ✔️ Data Validation
 - Row count validation
 - Schema validation
-- Null checks
+- Null value checks
 - Duplicate checks
-- Transformation checks
 
-## Folder Structure
-- `docs/` for project documents
-- `data/` for source and target files
-- `tests/` for validation scripts
+### ✔️ Transformation Testing
+- Country code → country name
+- Date format conversion
+- Amount rounding
 
-## Tools Used
-- GitHub
-- Python
-- Pandas
-- Pytest
+### ✔️ Business Validation
+- Record consistency
+- Data integrity
 
-## Outcome
-This project demonstrates how a tester can validate the quality and accuracy of a data migration.
+---
+
+## 📂 Project Structure

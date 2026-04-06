@@ -1,0 +1,6 @@
+customer_id,customer_name,email,country,order_id,order_date,product,quantity,sales_amount
+1,John Doe,john@gmail.com,India,101,2023-01-12,Phone,2,200.46
+2,Jane Smith,jane@gmail.com,United States,102,2023-02-15,Laptop,1,801.00
+3,Rahul Sharma,rahul@gmail.com,India,103,2023-03-20,Tablet,3,300.12
+4,Emily Clark,emily@gmail.com,United States,104,2023-04-05,Monitor,1,450.78
+5,Amit Verma,amit@gmail.com,India,105,2023-05-18,Keyboard,2,99.50

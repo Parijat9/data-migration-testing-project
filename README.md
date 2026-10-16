@@ -1,104 +1,33 @@
-# 🚀 Data Migration Testing Project
+# Data transfer checks
 
-## 📌 Overview
-This project simulates real-world data migration testing where data is moved from System A (source) to System B (target).
+A small Python project that checks two CSV files before and after a data transfer.
 
-The goal is to validate that:
-- Data is migrated completely
-- Data is accurate
-- Transformations are correctly applied
+Moving a file is only part of the job. These checks help spot missing records, blank customer IDs and repeated order numbers before the new file is used for reporting.
 
----
+![Results from running the six checks](docs/preview.png)
 
-## 🧠 Business Context
-A client migrated customer and order data to a new system.
+## What is checked
 
-If migration is incorrect:
-- Reports become unreliable
-- Business decisions become wrong
-- Customer data may be lost or corrupted
+- Both files contain the same number of rows.
+- Customer IDs in the new file are not blank.
+- Order IDs in the new file are not repeated.
+- Country names are from the expected list.
+- Sales amounts are greater than zero.
+- Date values contain a dash.
 
----
+## Run the checks
 
-## ⚠️ Risks Identified
-- Missing records
-- Duplicate records
-- Incorrect transformations
-- Invalid formats (dates, country names)
-- Null values in key fields
+Install Python, then run these commands from this repository folder:
 
----
+```bash
+python -m pip install -r requirements.txt
+python -m pytest -v
+```
 
-## 🧪 Testing Performed
+The `data/` folder contains the two sample CSV files. The `tests/` folder contains the six checks.
 
-### ✔️ Data Validation
-- Row count validation
-- Schema validation
-- Null value checks
-- Duplicate checks
+## What these checks do not prove
 
-### ✔️ Transformation Testing
-- Country code → country name
-- Date format conversion
-- Amount rounding
+A passing result does not mean every value transferred correctly. The date check only looks for a dash; it does not confirm a valid date. The tests do not yet compare every source row with its matching target row or verify all rounding and name changes.
 
-### ✔️ Business Validation
-- Record consistency
-- Data integrity
-
----
-
-## 📂 Project Structure
-- docs/ → Documentation
-- data/ → Source & Target datasets
-- tests/ → Python validation scripts
-
----
-
-## 🛠 Tools Used
-- Python
-- Pandas
-- Pytest
-- GitHub
-
----
-
-## 📊 Sample Test Results
-
-| Test Type | Status |
-|----------|--------|
-| Row Count | ✅ Pass |
-| Null Check | ✅ Pass |
-| Duplicate Check | ✅ Pass |
-| Transformation Check | ✅ Pass |
-
----
-
-## 🧾 Key Learnings
-- Importance of validating data migration
-- Handling transformation rules
-- Detecting data inconsistencies
-- Structuring QA projects in GitHub
-
----
-
-## 📸 Project Screenshots
-
-### Repository
-![Repo](images/repo.png)
-
-### Issues
-![Issues](images/issues.png)
-
-### Project Board
-![Board](images/board.png)
-
----
-
-## 🎯 Conclusion
-The migration was successfully validated using structured test cases and automated checks.
-
-This project demonstrates practical skills in:
-- Data testing
-- QA documentation
-- GitHub project management
+[Transfer rules](docs/migration-rules.md) describe the intended changes. [Test notes](docs/test-report.md) separate the checks that run from the improvements still needed.

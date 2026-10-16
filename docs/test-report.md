@@ -1,37 +1,15 @@
-# 📊 Test Execution Report
+# Test results
 
-## Objective
-Validate data migration from System A to System B.
+Run `python -m pytest -v` from the repository folder to check the included sample files.
 
----
+There are six automated checks: row counts, blank customer IDs, repeated order IDs, country names, positive sales amounts and a basic date-format check.
 
-## Test Summary
+The screenshot in the README records the result of the latest documentation review. It is not a guarantee that another dataset will pass.
 
-| Test Case | Result |
-|----------|--------|
-| Row Count Validation | Pass |
-| Schema Validation | Pass |
-| Null Check | Pass |
-| Duplicate Check | Pass |
-| Transformation Validation | Pass |
+## Checks to add
 
----
-
-## Observations
-- Data was successfully migrated
-- All transformation rules were correctly applied
-- No critical defects found
-
----
-
-## Metrics
-
-- Total Records Tested: 5
-- Defects Found: 3
-- Defects Resolved: 3
-- Pass Rate: 100%
-
----
-
-## Conclusion
-The migration is successful and data integrity is maintained.
+- Match each source order to the corresponding target order.
+- Compare quantities and rounded amounts.
+- Check trimmed names and country conversions against the source.
+- Parse dates rather than only checking for a dash.
+- Confirm the complete set of expected columns.

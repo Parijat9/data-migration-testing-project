@@ -4,6 +4,10 @@ A small Python project that checks two CSV files before and after a data transfe
 
 Moving a file is only part of the job. These checks help spot missing records, blank customer IDs and repeated order numbers before the new file is used for reporting.
 
+## Test console
+
+A recorded test run, showing each check and its result. Generate the report with `python render_report.py` after installing the requirements.
+
 ![Results from running the six checks](docs/preview.png)
 
 ## What is checked
